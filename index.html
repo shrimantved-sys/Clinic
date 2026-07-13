@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gurupad Dental Clinic - Premium General & Cosmetic Dental Care in Surat</title>
+  <meta name="description" content="Gurupad Dental Clinic provides state-of-the-art general and cosmetic dental care in Surat, Gujarat. Committed to giving you a beautiful, healthy smile for a lifetime.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome for Premium Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Preloader Screen -->
+  <div id="preloader">
+    <div class="loader-content">
+      <div class="loader-logo-wrapper">
+        <img src="logo.png" alt="Gurupad Dental Clinic Logo" class="loader-logo-img">
+      </div>
+      <div class="loader-progress-container">
+        <div class="loader-progress-bar" id="load-progress"></div>
+      </div>
+      <div class="loader-text" id="load-text">Initializing 3D Dental Experience (0%)</div>
+    </div>
+  </div>
+
+  <!-- Custom Cursor for Luxury Experience -->
+  <div class="custom-cursor"></div>
+  <div class="custom-cursor-follower"></div>
+
+  <!-- Translucent Fixed Header -->
+  <header>
+    <div class="nav-container">
+      <a href="#home" class="logo" id="logo-link">
+        <img src="logo.png" alt="Gurupad Dental Clinic Logo" class="nav-logo-img">
+        <div class="logo-text">
+          <span class="logo-title">GURUPAD</span>
+          <span class="logo-subtitle">DENTAL CLINIC</span>
+        </div>
+      </a>
+      
+      <nav>
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#treatments">Treatments</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" class="cta-button-nav">Book Appointment</a></li>
+        </ul>
+      </nav>
+
+      <button class="burger-menu" id="burger-toggle" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Sticky Canvas Hero Container -->
+  <div class="hero-scroll-container" id="home">
+    <div class="sticky-wrapper">
+      <!-- Glow & Lighting overlays -->
+      <div class="ambient-glow bg-glow-1"></div>
+      <div class="ambient-glow bg-glow-2"></div>
+      
+      <!-- Interactive Molar Canvas -->
+      <canvas id="hero-canvas"></canvas>
+      
+      <!-- Overlay Text Centered -->
+      <div class="hero-overlay" id="hero-overlay">
+        <span class="hero-badge"><i class="fa-solid fa-tooth"></i> Gurupad Dental Clinic</span>
+        <h1 class="hero-title">Your smile our care</h1>
+        <p class="hero-subtitle">For a lifetime</p>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-primary">Book Consultation</a>
+          <a href="#about" class="btn btn-secondary">Explore Clinic</a>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator-wrapper">
+        <span>Scroll to Explore</span>
+        <div class="scroll-dot"></div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- Section 2: About Us -->
+    <section class="section-about" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-visual" data-reveal="left">
+            <div class="about-image-wrapper">
+              <img src="logo.png" alt="Gurupad Clinic Entrance / Aesthetic" class="about-feature-img">
+              <div class="about-experience-badge">
+                <span class="badge-num">4.9</span>
+                <div class="badge-stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <span class="badge-text">112+ Google Reviews</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-content" data-reveal="right">
+            <span class="section-tag">Who We Are</span>
+            <h2 class="section-title">The Standard of Modern Dental Care in Surat</h2>
+            <p class="about-quote">"A dentist is someone who will take care of you and your family with the quality dental care that you and your family deserve."</p>
+            <p class="about-body">We at Gurupad Dental Clinic are the best dentist in Surat, Gujarat. We provide general and cosmetic dental care that’s customized based on your needs and those of your family and friends. Our team of dentists in Surat, Gujarat is committed to giving you a beautiful, healthy smile for a lifetime.</p>
+            
+            <div class="about-features">
+              <div class="feature-item">
+                <div class="feature-icon"><i class="fa-solid fa-circle-check"></i></div>
+                <div class="feature-text">
+                  <h3>Advanced Diagnostics</h3>
+                  <p>State-of-the-art diagnostic imaging for highly precise treatments.</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon"><i class="fa-solid fa-circle-check"></i></div>
+                <div class="feature-text">
+                  <h3>Comfortable Atmosphere</h3>
+                  <p>A relaxing, premium environment designed to put you at ease.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Treatments / Procedures -->
+    <section class="section-treatments" id="treatments">
+      <div class="container">
+        <div class="section-header" data-reveal="top">
+          <span class="section-tag">Clinical Excellence</span>
+          <h2 class="section-title">Our Premium Dental Services</h2>
+          <p class="section-desc">Experience fully customized procedures utilizing state-of-the-art materials and technology.</p>
+        </div>
+
+        <div class="treatments-grid">
+          
+          <!-- Card 1: Tooth Jewellery -->
+          <div class="treatment-card" data-reveal="fade-in">
+            <div class="treatment-img-wrapper">
+              <img src="tooth_jewellery.png" alt="Tooth Jewellery treatment illustration" class="treatment-img">
+              <div class="treatment-overlay-info">
+                <span>Safe & Non-invasive</span>
+              </div>
+            </div>
+            <div class="treatment-card-content">
+              <h3>Tooth Jewellery</h3>
+              <p>Add a sparkle to your smile with premium crystal jewels. Safe, non-invasive, and temporary cosmetic procedure without drilling.</p>
+              <a href="#contact" class="card-link">Request Consult <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+          </div>
+
+          <!-- Card 2: Tooth whitening -->
+          <div class="treatment-card" data-reveal="fade-in">
+            <div class="treatment-img-wrapper">
+              <img src="tooth_whitening.png" alt="Tooth Whitening treatment illustration" class="treatment-img">
+              <div class="treatment-overlay-info">
+                <span>Instantly Brighter</span>
+              </div>
+            </div>
+            <div class="treatment-card-content">
+              <h3>Tooth Whitening</h3>
+              <p>Professional teeth whitening for a dazzlingly bright smile. Safely removes deep-seated stains and discoloration in just one visit.</p>
+              <a href="#contact" class="card-link">Request Consult <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+          </div>
+
+          <!-- Card 3: Denture -->
+          <div class="treatment-card" data-reveal="fade-in">
+            <div class="treatment-img-wrapper">
+              <img src="denture.png" alt="Denture treatment illustration" class="treatment-img">
+              <div class="treatment-overlay-info">
+                <span>Perfect Fit & Feel</span>
+              </div>
+            </div>
+            <div class="treatment-card-content">
+              <h3>Denture</h3>
+              <p>Premium quality full and partial dentures designed for maximum comfort, stability, natural look, and optimal chewing restoration.</p>
+              <a href="#contact" class="card-link">Request Consult <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+          </div>
+
+          <!-- Card 4: Child teeth care -->
+          <div class="treatment-card" data-reveal="fade-in">
+            <div class="treatment-img-wrapper">
+              <img src="child_teeth_care.png" alt="Child Teeth Care treatment illustration" class="treatment-img">
+              <div class="treatment-overlay-info">
+                <span>Gentle Pediatric Care</span>
+              </div>
+            </div>
+            <div class="treatment-card-content">
+              <h3>Child Teeth Care</h3>
+              <p>Gentle and friendly pediatric dental services, ensuring proper growth of your child's teeth in a stress-free environment.</p>
+              <a href="#contact" class="card-link">Request Consult <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+          </div>
+
+          <!-- Card 5: Braces -->
+          <div class="treatment-card" data-reveal="fade-in">
+            <div class="treatment-img-wrapper">
+              <img src="braces.png" alt="Braces orthodontic treatment illustration" class="treatment-img">
+              <div class="treatment-overlay-info">
+                <span>Perfect Alignment</span>
+              </div>
+            </div>
+            <div class="treatment-card-content">
+              <h3>Braces & Aligners</h3>
+              <p>Correct crooked teeth and bite problems with traditional orthodontic braces or state-of-the-art clear aligners.</p>
+              <a href="#contact" class="card-link">Request Consult <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+          </div>
+
+          <!-- Card 6: Wisdom tooth -->
+          <div class="treatment-card" data-reveal="fade-in">
+            <div class="treatment-img-wrapper">
+              <img src="wisdom_tooth.png" alt="Wisdom Tooth extraction treatment illustration" class="treatment-img">
+              <div class="treatment-overlay-info">
+                <span>Pain-Free Extraction</span>
+              </div>
+            </div>
+            <div class="treatment-card-content">
+              <h3>Wisdom Tooth</h3>
+              <p>Safe and painless extraction of impacted wisdom teeth. Relieves pressure, prevents crowding, and ensures oral wellness.</p>
+              <a href="#contact" class="card-link">Request Consult <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+          </div>
+
+          <!-- Card 7: Filling / restoration -->
+          <div class="treatment-card" data-reveal="fade-in">
+            <div class="treatment-img-wrapper">
+              <img src="filling_restoration.png" alt="Tooth Filling and Restoration treatment illustration" class="treatment-img">
+              <div class="treatment-overlay-info">
+                <span>Natural-looking Composite</span>
+              </div>
+            </div>
+            <div class="treatment-card-content">
+              <h3>Filling / Restoration</h3>
+              <p>Tooth-colored composite restorations that blend seamlessly with natural enamel while restoring full structure and strength.</p>
+              <a href="#contact" class="card-link">Request Consult <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+          </div>
+
+          <!-- Card 8: Implant -->
+          <div class="treatment-card" data-reveal="fade-in">
+            <div class="treatment-img-wrapper">
+              <img src="dental_implant.png" alt="Dental Implant treatment illustration" class="treatment-img">
+              <div class="treatment-overlay-info">
+                <span>Lifetime Solution</span>
+              </div>
+            </div>
+            <div class="treatment-card-content">
+              <h3>Dental Implant</h3>
+              <p>The gold standard for tooth replacement. Long-lasting titanium implants topped with custom-fabricated, lifelike ceramic crowns.</p>
+              <a href="#contact" class="card-link">Request Consult <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+          </div>
+
+          <!-- Card 9: Laser in dentistry -->
+          <div class="treatment-card" data-reveal="fade-in">
+            <div class="treatment-img-wrapper">
+              <img src="laser_dentistry.png" alt="Laser Dentistry treatment illustration" class="treatment-img">
+              <div class="treatment-overlay-info">
+                <span>Sutures-Free Laser</span>
+              </div>
+            </div>
+            <div class="treatment-card-content">
+              <h3>Laser in Dentistry</h3>
+              <p>Modern laser treatments for stitchless, bloodless, and virtually pain-free dental and gum procedures. Faster recovery times.</p>
+              <a href="#contact" class="card-link">Request Consult <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+          </div>
+
+          <!-- Card 10: Gum surgery treatment -->
+          <div class="treatment-card" data-reveal="fade-in">
+            <div class="treatment-img-wrapper">
+              <img src="gum_surgery.png" alt="Gum Surgery treatment illustration" class="treatment-img">
+              <div class="treatment-overlay-info">
+                <span>Heal & Protect Gums</span>
+              </div>
+            </div>
+            <div class="treatment-card-content">
+              <h3>Gum Surgery Treatment</h3>
+              <p>Advanced periodontal therapies to treat bleeding gums, gingivitis, and bone recession. Restores solid structural support.</p>
+              <a href="#contact" class="card-link">Request Consult <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+          </div>
+
+          <!-- Card 11: Cosmetic dentistry -->
+          <div class="treatment-card" data-reveal="fade-in">
+            <div class="treatment-img-wrapper">
+              <img src="cosmetic_dentistry.png" alt="Cosmetic Dentistry veneer illustration" class="treatment-img">
+              <div class="treatment-overlay-info">
+                <span>Hollywood Smile Makeover</span>
+              </div>
+            </div>
+            <div class="treatment-card-content">
+              <h3>Cosmetic Dentistry</h3>
+              <p>Custom veneers, smile corrections, and dental laminates specifically crafted to elevate your aesthetic appearance.</p>
+              <a href="#contact" class="card-link">Request Consult <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+          </div>
+
+          <!-- Card 12: Root canal -->
+          <div class="treatment-card" data-reveal="fade-in">
+            <div class="treatment-img-wrapper">
+              <img src="root_canal.png" alt="Root Canal therapy illustration" class="treatment-img">
+              <div class="treatment-overlay-info">
+                <span>Save Infected Teeth</span>
+              </div>
+            </div>
+            <div class="treatment-card-content">
+              <h3>Root Canal Treatment</h3>
+              <p>Endodontic therapy utilizing computerized rotary files to completely eliminate dental pain and save severely decayed teeth.</p>
+              <a href="#contact" class="card-link">Request Consult <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+          </div>
+
+          <!-- Card 13: Oral cancer screening -->
+          <div class="treatment-card" data-reveal="fade-in">
+            <div class="treatment-img-wrapper">
+              <img src="cancer_screening.png" alt="Oral Cancer Screening illustration" class="treatment-img">
+              <div class="treatment-overlay-info">
+                <span>Early Detection & Safety</span>
+              </div>
+            </div>
+            <div class="treatment-card-content">
+              <h3>Oral Cancer Screening</h3>
+              <p>Comprehensive oral screening using advanced light technology to inspect tissues, ensuring peace of mind and proactive care.</p>
+              <a href="#contact" class="card-link">Request Consult <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+          </div>
+
+          <!-- Card 14: Crown and bridge -->
+          <div class="treatment-card" data-reveal="fade-in">
+            <div class="treatment-img-wrapper">
+              <img src="crown_bridge.png" alt="Crown and Bridge restorative treatment illustration" class="treatment-img">
+              <div class="treatment-overlay-info">
+                <span>Reinforce & Rebuild</span>
+              </div>
+            </div>
+            <div class="treatment-card-content">
+              <h3>Crown & Bridge</h3>
+              <p>Custom metal-free ceramic crowns and multi-unit bridges to cap damaged teeth or bridge gaps seamlessly with maximum durability.</p>
+              <a href="#contact" class="card-link">Request Consult <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust Stats Section -->
+    <section class="section-stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-box" data-reveal="scale">
+            <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+            <span class="stat-number">10K+</span>
+            <span class="stat-label">Happy Patients</span>
+          </div>
+          <div class="stat-box" data-reveal="scale">
+            <div class="stat-icon"><i class="fa-solid fa-star"></i></div>
+            <span class="stat-number">4.9</span>
+            <span class="stat-label">Google Rating (112 Reviews)</span>
+          </div>
+          <div class="stat-box" data-reveal="scale">
+            <div class="stat-icon"><i class="fa-solid fa-award"></i></div>
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Sterilization & Hygiene</span>
+          </div>
+          <div class="stat-box" data-reveal="scale">
+            <div class="stat-icon"><i class="fa-solid fa-house-medical-flag"></i></div>
+            <span class="stat-number">Surat</span>
+            <span class="stat-label">Gujarat, India</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Reviews from Google -->
+    <section class="section-reviews" id="reviews">
+      <div class="container">
+        <div class="section-header" data-reveal="top">
+          <span class="section-tag">Patient Stories</span>
+          <h2 class="section-title">Google Reviews & Testimonials</h2>
+          <p class="section-desc">See why we are highly recommended as the most trusted dentist clinic in Morabhagal, Surat.</p>
+        </div>
+
+        <div class="slider-outer-wrapper">
+          <button class="slider-nav-btn prev-btn" aria-label="Previous Review"><i class="fa-solid fa-chevron-left"></i></button>
+          
+          <div class="reviews-slider-container">
+            <div class="reviews-slider-track" id="reviews-track">
+              
+              <!-- Review 1 -->
+              <div class="review-slide">
+                <div class="review-card">
+                  <div class="review-header">
+                    <div class="reviewer-avatar">S</div>
+                    <div class="reviewer-info">
+                      <h4>Swati Soni</h4>
+                      <span class="reviewer-status">Google Local Guide</span>
+                    </div>
+                    <div class="google-logo-review"><i class="fa-brands fa-google"></i></div>
+                  </div>
+                  <div class="review-rating">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="review-body">"Dr is very good & treatment also too good ...I m Totally Satisfied.....Staff behaviour is also very nice...."</p>
+                </div>
+              </div>
+
+              <!-- Review 2 -->
+              <div class="review-slide">
+                <div class="review-card">
+                  <div class="review-header">
+                    <div class="reviewer-avatar">M</div>
+                    <div class="reviewer-info">
+                      <h4>Margi Patel</h4>
+                      <span class="reviewer-status">Patient</span>
+                    </div>
+                    <div class="google-logo-review"><i class="fa-brands fa-google"></i></div>
+                  </div>
+                  <div class="review-rating">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="review-body">"The doctor is very polite and kind, attentive and the service is also very good.."</p>
+                </div>
+              </div>
+
+              <!-- Review 3 -->
+              <div class="review-slide">
+                <div class="review-card">
+                  <div class="review-header">
+                    <div class="reviewer-avatar">D</div>
+                    <div class="reviewer-info">
+                      <h4>Dipu Lad</h4>
+                      <span class="reviewer-status">Patient</span>
+                    </div>
+                    <div class="google-logo-review"><i class="fa-brands fa-google"></i></div>
+                  </div>
+                  <div class="review-rating">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="review-body">"Nice tretment i am very happy😍❤️"</p>
+                </div>
+              </div>
+
+              <!-- Review 4 -->
+              <div class="review-slide">
+                <div class="review-card">
+                  <div class="review-header">
+                    <div class="reviewer-avatar">N</div>
+                    <div class="reviewer-info">
+                      <h4>NITA PATEL</h4>
+                      <span class="reviewer-status">Patient</span>
+                    </div>
+                    <div class="google-logo-review"><i class="fa-brands fa-google"></i></div>
+                  </div>
+                  <div class="review-rating">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="review-body">"Very nice treatment,best doctor"</p>
+                </div>
+              </div>
+
+              <!-- Review 5 -->
+              <div class="review-slide">
+                <div class="review-card">
+                  <div class="review-header">
+                    <div class="reviewer-avatar">S</div>
+                    <div class="reviewer-info">
+                      <h4>Shabanu dobani</h4>
+                      <span class="reviewer-status">Patient</span>
+                    </div>
+                    <div class="google-logo-review"><i class="fa-brands fa-google"></i></div>
+                  </div>
+                  <div class="review-rating">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="review-body">"Very nice treatment"</p>
+                </div>
+              </div>
+
+              <!-- Review 6 -->
+              <div class="review-slide">
+                <div class="review-card">
+                  <div class="review-header">
+                    <div class="reviewer-avatar">C</div>
+                    <div class="reviewer-info">
+                      <h4>Sailor Chiraag</h4>
+                      <span class="reviewer-status">Patient</span>
+                    </div>
+                    <div class="google-logo-review"><i class="fa-brands fa-google"></i></div>
+                  </div>
+                  <div class="review-rating">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="review-body">"Good treatment & service."</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <button class="slider-nav-btn next-btn" aria-label="Next Review"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Contact & Bookings -->
+    <section class="section-contact" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          
+          <div class="contact-form-panel" data-reveal="left">
+            <span class="section-tag">Reservations</span>
+            <h2 class="form-title">Request an Appointment</h2>
+            <p class="form-desc">Fill out the form below, or click to <a href="https://wa.me/916354695478" target="_blank" class="text-link">WhatsApp us directly</a>. We'll confirm your slot within 1 hour.</p>
+            
+            <form id="appointment-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="form-name">Full Name *</label>
+                  <input type="text" id="form-name" placeholder="John Doe" required>
+                  <span class="error-msg">Name is required</span>
+                </div>
+                <div class="form-group">
+                  <label for="form-phone">Phone Number *</label>
+                  <input type="tel" id="form-phone" placeholder="+91 99999 99999" required>
+                  <span class="error-msg">Valid phone number is required</span>
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="form-service">Select Treatment *</label>
+                  <select id="form-service" required>
+                    <option value="" disabled selected>Select a procedure</option>
+                    <option value="Tooth Jewellery">Tooth Jewellery</option>
+                    <option value="Tooth Whitening">Tooth Whitening</option>
+                    <option value="Denture">Denture</option>
+                    <option value="Child Teeth Care">Child Teeth Care</option>
+                    <option value="Braces & Aligners">Braces & Aligners</option>
+                    <option value="Wisdom Tooth Extraction">Wisdom Tooth Extraction</option>
+                    <option value="Filling / Restoration">Filling / Restoration</option>
+                    <option value="Dental Implant">Dental Implant</option>
+                    <option value="Laser in Dentistry">Laser in Dentistry</option>
+                    <option value="Gum Surgery">Gum Surgery Treatment</option>
+                    <option value="Cosmetic Dentistry">Cosmetic Dentistry</option>
+                    <option value="Root Canal">Root Canal Treatment</option>
+                    <option value="Oral Cancer Screening">Oral Cancer Screening</option>
+                    <option value="Crown and Bridge">Crown and Bridge</option>
+                  </select>
+                  <span class="error-msg">Please select a treatment</span>
+                </div>
+                <div class="form-group">
+                  <label for="form-date">Preferred Date *</label>
+                  <input type="date" id="form-date" required>
+                  <span class="error-msg">Please pick a future date</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message">Special Notes / Requests</label>
+                <textarea id="form-message" rows="3" placeholder="Tell us if you are experiencing pain or have questions..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-submit">
+                <span>Book Appointment</span> <i class="fa-solid fa-calendar-check"></i>
+              </button>
+
+              <div class="form-success-banner" id="form-success">
+                <i class="fa-solid fa-circle-check"></i>
+                <div class="success-text">
+                  <h4>Appointment Request Sent!</h4>
+                  <p>We will contact you shortly on WhatsApp/Call to confirm your slot.</p>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="contact-info-panel" data-reveal="right">
+            <div class="info-card">
+              <h3>Clinic Location</h3>
+              <p class="address-text">
+                <i class="fa-solid fa-location-dot"></i>
+                Gurupad Dental Clinic<br>
+                (Located in: Shivanjani Hub), opp. Gurukrupa vidyalaya,<br>
+                Dattatrey Society, Morabhagal,<br>
+                Surat, Gujarat 395005
+              </p>
+              
+              <div class="map-buttons">
+                <a href="https://maps.app.goo.gl/og6ZAxKudfJ9pSaY9?g_st=aw" target="_blank" class="btn btn-map"><i class="fa-solid fa-map-location-dot"></i> Direct Share Link</a>
+                <a href="https://maps.google.com/?q=Gurupad+Dental+Clinic+Morabhagal+Surat" target="_blank" class="btn btn-map-outline"><i class="fa-solid fa-route"></i> Get Directions</a>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <h3>Quick Contact</h3>
+              <p><i class="fa-solid fa-phone"></i> Phone: <strong>+91 6354695478</strong></p>
+              <p><i class="fa-brands fa-whatsapp"></i> WhatsApp Support: <strong>+91 6354695478</strong></p>
+            </div>
+
+            <div class="info-card">
+              <h3>Working Hours</h3>
+              <div class="hours-row">
+                <span>Monday - Saturday:</span>
+                <strong>09:00 AM - 01:00 PM<br>04:00 PM - 08:00 PM</strong>
+              </div>
+              <div class="hours-row closed">
+                <span>Sunday:</span>
+                <strong>Closed</strong>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="logo.png" alt="Gurupad Clinic Logo" class="footer-logo-img">
+          <div class="footer-logo-text">
+            <h4>GURUPAD</h4>
+            <span>DENTAL CLINIC</span>
+          </div>
+          <p class="footer-desc">Providing premium general and cosmetic dental care designed for comfort and precision in Surat.</p>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#treatments">Treatments</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-services">
+          <h4>Key Treatments</h4>
+          <ul>
+            <li><a href="#treatments">Teeth Whitening</a></li>
+            <li><a href="#treatments">Dental Implants</a></li>
+            <li><a href="#treatments">Root Canal Therapy</a></li>
+            <li><a href="#treatments">Clear Aligners / Braces</a></li>
+            <li><a href="#treatments">Cosmetic Veneers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Emergency & Support</h4>
+          <p>Book directly on call or whatsapp:</p>
+          <a href="tel:+916354695478" class="footer-cta-phone"><i class="fa-solid fa-phone"></i> +91 6354695478</a>
+          <div class="social-icons">
+            <a href="https://wa.me/916354695478" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://maps.app.goo.gl/og6ZAxKudfJ9pSaY9?g_st=aw" target="_blank" aria-label="Google Maps"><i class="fa-solid fa-map-location-dot"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Gurupad Dental Clinic. All Rights Reserved. Designed for premium dental healthcare.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
